@@ -23,9 +23,8 @@
     <main class="container">
       <!-- Sign-up form start -->
       <section class="info">
-        <p class="info-para">
-          Stay updated! Join 60,000+ product managers receiving monthly updates
-          on:
+        <h1>Stay updated!</h1>
+        <p class="info-para">Join 60,000+ product managers receiving monthly updates on:
         </p></br>
         <p class="features"><img src="./assets/images/icon-list.svg" /> Product discovery and building what matters </p><br />
         <p class="features"><img src="./assets/images/icon-list.svg" />Measuring to ensure updates are a success</p></br>
@@ -33,8 +32,8 @@
         />And much more!</p> <br/><br/>
         <div class="subscription-div">
         <label for="email">Email address</label>
-        <input type="email" name="email" placeholder="xy@abc.com"> <br/>
-        <button type="submit"> Subscribe to monthly newsletter</button>
+        <input type="email" name="email" placeholder="abc@abc.com" value="" id="input-email" required> <br/>
+        <input class="button" type="submit" id="subscribe-btn" name="Subscribe to monthly newsletter">
         </div>
 
         <!-- Sign-up form end -->
@@ -44,18 +43,22 @@
       </section>
     </main>
     <!-- Success message start -->
+      <div class="thanks-div hidden">
+        <img src="./assets/images/icon-list.svg" class="success-icon"/>
 
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
+    <h1 class="thanks-heading">Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span id="email-id">ash@loremcompany.com.</span> Please open it and click the button inside to confirm
+    your subscription. </p>
+    <button class="button" id="dismiss-btn">Dismiss message</button>
+  </div>
     <!-- Success message end -->
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/kedaragate/newsletter-sub">Kedar Agate</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
