@@ -74,7 +74,12 @@ input:hover {
   cursor: pointer;
 }
 
-.button {
+.validEmailRequired {
+  color: hsl(4, 100%, 67%);
+  font-size: x-small;
+}
+
+button {
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   border: none;
@@ -86,7 +91,7 @@ input:hover {
   cursor: pointer;
 }
 
-.button:hover {
+button:hover {
   background: rgb(239, 39, 45);
   background: linear-gradient(
     135deg,
@@ -94,6 +99,7 @@ input:hover {
     rgba(255, 215, 102, 1) 100%
   );
   box-shadow: 1px 1px 10px rgb(239, 39, 45);
+  outline: none;
 }
 
 p > img {
@@ -134,4 +140,9 @@ span {
 a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
+}
+
+.lable-div {
+  display: flex;
+  justify-content: space-between;
 }

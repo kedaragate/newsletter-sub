@@ -31,9 +31,10 @@
         <p class="features"><img src="./assets/images/icon-list.svg"
         />And much more!</p> <br/><br/>
         <div class="subscription-div">
-        <label for="email">Email address</label>
-        <input type="email" name="email" placeholder="abc@abc.com" value="" id="input-email" required> <br/>
-        <input class="button" type="submit" id="subscribe-btn" name="Subscribe to monthly newsletter">
+          <div class="lable-div">
+        <label for="email">Email address</label> <span class="hidden validEmailRequired">Valid email required</span></div>
+        <input type="email" name="email" placeholder="abc@abc.com" id="input-email" onfocus=onFocus(this) required> <br/>
+        <button type="submit" id="subscribe-btn">Subscribe to monthly newsletter</button>
         </div>
 
         <!-- Sign-up form end -->
@@ -49,7 +50,7 @@
     <h1 class="thanks-heading">Thanks for subscribing!</h1>
     <p>A confirmation email has been sent to <span id="email-id">ash@loremcompany.com.</span> Please open it and click the button inside to confirm
     your subscription. </p>
-    <button class="button" id="dismiss-btn">Dismiss message</button>
+    <button class="button" id="dismiss-btn" onclick=dismiss()>Dismiss message</button>
   </div>
     <!-- Success message end -->
 
